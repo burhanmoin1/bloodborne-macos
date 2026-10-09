@@ -71,7 +71,9 @@ def launch(args) -> int:
             if not bundled.is_file():
                 raise FileNotFoundError("The CrossOver TLS adapter is missing from this macOS app build.")
             shutil.copy2(bundled, bootstrap)
-    patched = patch(port / "bin/bb-probe.exe", port / "bin/bb-probe-crossover.exe")
+    # Use a product name for the patched helper: CrossOver exposes the PE
+    # executable basename as the app's Dock tooltip.
+    patched = patch(port / "bin/bb-probe.exe", port / "bin/Bloodborne MacOS.exe")
     # The upstream Windows launcher executes PORT/run.py from disk. Ship the
     # macOS-specific wrapper with this app so it can cache the expensive ELF
     # preparation while continuing to use the verified CrossOver runtime.

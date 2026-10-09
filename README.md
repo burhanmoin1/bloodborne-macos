@@ -15,7 +15,7 @@ build, and I’m hoping other Mac users can help me improve it over time. The
 app is unofficial and is not affiliated with Sony, FromSoftware, CodeWeavers,
 or the port’s authors.
 
-## Version 0.1.0
+## Version 0.1.1
 
 This is the first release, not a promise of consistent performance yet. On my
 M1 Pro, gameplay has ranged from around 15 to 30 FPS depending on the area and
@@ -56,7 +56,7 @@ Apple Silicon graphics path used here.
 
 ## Download and launch
 
-Download **Bloodborne-MacOS-0.1.0.dmg** from the
+Download **Bloodborne-MacOS-0.1.1.dmg** from the
 [GitHub Releases](https://github.com/burhanmoin1/bloodborne-macos/releases)
 page. Open the DMG and drag **Bloodborne MacOS.app** to Applications. Start
 the app, select the folder containing `eboot.bin` under **Game & effects**,
@@ -119,6 +119,6 @@ brew install mingw-w64
 ```
 
 The app is built at `dist/Bloodborne MacOS.app`; the DMG is
-`dist/Bloodborne-MacOS-0.1.0.dmg`. `BB_APP_VERSION` can be set when building a
+`dist/Bloodborne-MacOS-0.1.1.dmg`. `BB_APP_VERSION` can be set when building a
 different version. For source development, double-click
 `Launch Bloodborne.command` to open the same launcher.

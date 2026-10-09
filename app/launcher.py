@@ -33,7 +33,7 @@ import zipfile
 FROZEN = getattr(sys, 'frozen', False)
 IS_MACOS = sys.platform == 'darwin'
 APP_NAME = 'Bloodborne MacOS' if IS_MACOS else 'Bloodborne'
-APP_VERSION = '0.1.0'
+APP_VERSION = '0.1.1'
 PACKAGE_DIR = Path(__file__).resolve().parent
 if FROZEN:
     APP_DIR = Path(getattr(sys, '_MEIPASS', PACKAGE_DIR)) / 'app'
