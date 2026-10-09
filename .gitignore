@@ -1,0 +1,22 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.build/
+.build-venv/
+build/
+dist/
+*.spec
+
+# Local development inputs and user data: never include these in the macOS repo.
+/bloodborne_pc/
+/bbport-windows/
+/game/
+/compatdata/
+/macos-runtime/
+*.dmp
+*.log
+
+# Downloaded runtimes, save data, and caches.
+/app/resources/kosmickrisp/
+/user/
+/out/
